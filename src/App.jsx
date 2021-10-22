@@ -20,7 +20,8 @@ function App() {
    <Auth0Provider
      domain="autenticacionmintic.us.auth0.com"
     clientId="ljdxTywVaa7tVPkdZgyes5iITCjFehoO"
-    redirectUri={window.location.origin}
+    redirectUri="https://nameless-castle-60806.herokuapp.com/crear_venta"
+    audience="api-auteticacion-zapatocas-mintic"
    >
    <div className="App">
       <Router>

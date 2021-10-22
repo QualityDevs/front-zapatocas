@@ -1,10 +1,21 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from 'react-router-dom';
 
 const PrivateRoute = ({children}) => {
    
-    const { user, isAuthenticated, isLoading } = useAuth0();
+    const { user, isAuthenticated, isLoading,getAccessTokenSilently } = useAuth0();
+
+    useEffect(() => {
+
+        const fetchAuth0Token =async()=>{
+            const accessToken = await getAccessTokenSilently(
+                audience="api-auteticacion-zapatocas-mintic"
+            );
+        };
+            
+        fetchAuth0Token()
+    }, []);
 
 
 

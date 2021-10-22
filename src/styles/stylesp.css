@@ -1,0 +1,38 @@
+.labels{
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+  }
+  
+  .form-group{
+    padding: 1rem 20rem;
+    display: block;
+    justify-content: space-between;
+  }
+  .contenedorM{
+    font-family: 'Multi', sans-serif;
+    background-color: rgb(202, 222, 241);
+    display: list-item;
+    padding: 2%;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  table thead {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #006699;
+  }
+  
+  table tbody tr{
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  table tbody tr th div{
+    display: inline-flex;
+    column-gap: 20px;
+    align-content: center;
+    padding: 5px;
+  }
+  

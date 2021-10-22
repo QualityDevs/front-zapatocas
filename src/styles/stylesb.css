@@ -1,0 +1,47 @@
+.sidebar{
+    min-width: 30vh; 
+    max-width: 30vh;
+    min-height: 100%;
+    color: white;
+    padding: 0px;
+    background-color: rgb(15, 27, 80);
+    position: absolute;
+}
+
+
+.sletra{
+    color: white;
+    font-family: 'Multi', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sletras{
+    color: white;
+    font-family: 'Multi', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+li{
+    padding: 0.5rem 0.1rem;
+}
+
+.lista-desplegable{
+    padding: 0rem 2rem ;
+}
+
+ul{
+  margin: 0px;
+  padding: 0;
+  text-align: start;
+  list-style: none;
+}
+
+.boton{
+    color: red;
+    size: 25;
+}
+h2{
+    text-align: center;
+}

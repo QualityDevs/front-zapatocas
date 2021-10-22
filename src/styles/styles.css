@@ -1,0 +1,71 @@
+/*Style for title and elements in center */
+.Center{
+    text-align: center;
+    align-self: center;
+    vertical-align: middle;
+}
+
+/*Style data of the table */
+.Data{
+   vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo{
+    height: 50px;
+}
+
+.containerMain{
+    
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgb(130, 160, 243);
+    border-bottom: 0.5px solid black;
+}
+
+.navbar > li{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.containerMain > main{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.form{
+
+  justify-items: center;
+    margin-bottom: 1%;
+}
+
+.titulo{
+
+    font-style: italic;
+
+}
+
+.llogin{
+ 
+    background-color: aquamarine;
+    text-align: center;
+    height: 90vh;
+    display: list-item;
+    padding-top: 30vh;
+}
+
+.olvidar{
+    padding-bottom: 1vh;
+}

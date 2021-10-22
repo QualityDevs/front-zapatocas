@@ -1,0 +1,100 @@
+.color{
+    height: 100vh;
+    background-color: rgb(202, 222, 241);
+    padding: 50px;
+}
+.colums{
+    display: flex;
+    flex-direction: column;
+}
+.tabla2 {     
+    align-items: center;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 16px;    
+    margin: auto;
+    width: 50%; 
+    text-align: left;    
+    border-collapse: collapse;
+}
+.tablatd2 {    
+    padding: 8px; 
+    font-weight: bold;      
+    background: #FFFFFF;     
+    border-bottom: 1px solid #c2c8e0;   
+    border-top: 1px solid #c2c8e0;
+    border-left: 1px solid #c2c8e0; 
+    border-right: 1px solid #c2c8e0;
+}
+.tablaSelect{
+    width: 225px;
+    height: 40px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .35rem;
+}
+.tablaH3{
+    font-size: 40px;
+}
+.h1{
+    margin-bottom: 55px;
+}
+.centro2{
+    text-align: center;
+}
+.overlay { 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+#popupBody{
+    width: 46%;
+    padding: 2%;
+    background: #FFF;
+    position: relative;
+    margin: 20% auto;
+    transition: all 5s ease-in-out;
+}
+#cerrar2{
+    position:static;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+    transition: all 200ms;
+}
+.aModificada{
+    outline: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
+}
+.aModificada:hover{
+    color: #FFFFFF;
+}
+.label{
+    margin-bottom:0.5rem;
+    margin-top: 1rem;
+    font-size: 22px;
+}
+.separate{
+    margin-top: 2rem;
+}

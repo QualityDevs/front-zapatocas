@@ -9,7 +9,7 @@ const AdminUsuarios = () => {
     const getUsuarios = async () => {
         const options = {
             method: 'GET',
-            url: 'http://localhost:5000/users'
+            url: 'https://nameless-castle-60806.herokuapp.com/users'
         };
         
             await axios.request(options).then((response) => {

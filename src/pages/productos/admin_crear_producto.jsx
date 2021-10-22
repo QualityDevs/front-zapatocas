@@ -19,7 +19,7 @@ const CrearProducto = () => {
         if(comprobar()){
             const options= {
                 method: 'POST',
-                url: 'http://localhost:5000/productos/new',
+                url: 'https://nameless-castle-60806.herokuapp.com/productos/new',
                 headers: { 'Content-Type': 'application/json' },
                 data: {nombre: nombre, descripcion: descripcion, vunitario:vunitario, estado:estado},
             };

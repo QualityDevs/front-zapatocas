@@ -21,7 +21,7 @@ class TableProductos extends Component {
     const getProductos = async () => {
       const options = {
         method: 'GET',
-        url: 'http://localhost:5000/productos'
+        url: 'https://nameless-castle-60806.herokuapp.com/productos'
       };
 
       await axios.request(options).then((response) => {

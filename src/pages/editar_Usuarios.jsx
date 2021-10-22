@@ -18,7 +18,7 @@ const EditarUsuarios = () => {
     const actualizarUsuario = async () => {
         const options = {
             method: 'PATCH',
-            url: 'https://nameless-castle-60806.herokuapp.com/users/edit',
+            url: 'https://peaceful-fortress-80371.herokuapp.com/users/edit',
             headers: { 'Content-Type': 'application/json' },
             data: { id: location.state._id, nombre: location.state.nombre, estado: estado, rol: rol },
         }

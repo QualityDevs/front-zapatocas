@@ -33,7 +33,7 @@ const EditarProducto = () => {
     const cambiarDB = async () => {
         const options = {
             method: 'PATCH',
-            url: 'https://nameless-castle-60806.herokuapp.com/productos/edit',
+            url: 'https://peaceful-fortress-80371.herokuapp.com/productos/edit',
             headers: { 'Content-Type': 'application/json' },
             data: { id: location.state._id, nombre: nombre, descripcion: descripcion, vunitario: vunitario, estado: estado },
         }

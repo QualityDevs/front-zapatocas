@@ -9,13 +9,17 @@ const PrivateRoute = ({children}) => {
     useEffect(() => {
 
         const fetchAuth0Token =async()=>{
-            const accessToken = await getAccessTokenSilently(
-                audience="api-auteticacion-zapatocas-mintic"
-            );
+            const accessToken = await getAccessTokenSilently({
+                audience="api-auteticacion-zapatocas-mintic",
+        });
+        localStorage.setItem("token", accessToken);
+
         };
-            
-        fetchAuth0Token()
-    }, []);
+        if (isAuthenticated) {
+
+            fetchAuth0Token()
+        }   
+    }, [isAuthenticated, getAccessTokenSilently]);
 
 
 

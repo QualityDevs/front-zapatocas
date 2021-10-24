@@ -3,7 +3,7 @@ import axios from "axios";
 export const eliminarProducto = async (id) =>{
     const options= {
         method: 'DELETE',
-        url: 'http://localhost:5000/productos/delete',
+        url: 'https://peaceful-fortress-80371.herokuapp.com/productos/delete',
         headers: { 'Content-Type': 'application/json',Authorization: `Bearer ${localStorage.getItem("token")}`},
         data : {id: id}
     }

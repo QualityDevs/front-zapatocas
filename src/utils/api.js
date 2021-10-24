@@ -4,7 +4,7 @@ export const eliminarProducto = async (id) =>{
     const options= {
         method: 'DELETE',
         url: 'http://localhost:5000/productos/delete',
-        headers: { 'Content-Type': 'application/json'},
+        headers: { 'Content-Type': 'application/json',Authorization: `Bearer ${localStorage.setItem("token")}`,},
         data : {id: id}
     }
 

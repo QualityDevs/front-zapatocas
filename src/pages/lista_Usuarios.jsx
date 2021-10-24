@@ -8,7 +8,9 @@ const ListaUsuarios = () => {
     const getUsuarios = async () => {
         const options = {
             method: 'GET',
-            url: 'https://peaceful-fortress-80371.herokuapp.com/users'
+            url: 'https://peaceful-fortress-80371.herokuapp.com/users',
+            headers: {
+                Authorization: `Bearer ${localStorage.setItem("token")}`,}
         };
         
             await axios.request(options).then((response) => {

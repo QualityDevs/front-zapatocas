@@ -20,7 +20,7 @@ const CrearProducto = () => {
             const options= {
                 method: 'POST',
                 url: 'https://peaceful-fortress-80371.herokuapp.com/productos/new',
-                headers: { 'Content-Type': 'application/json' },
+                headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem("token")}` },
                 data: {nombre: nombre, descripcion: descripcion, vunitario:vunitario, estado:estado},
             };
 

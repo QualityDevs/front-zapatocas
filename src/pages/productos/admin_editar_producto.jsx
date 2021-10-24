@@ -34,7 +34,7 @@ const EditarProducto = () => {
         const options = {
             method: 'PATCH',
             url: 'https://peaceful-fortress-80371.herokuapp.com/productos/edit',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 'Content-Type': 'application/json',Authorization: `Bearer ${localStorage.getItem("token")}` },
             data: { id: location.state._id, nombre: nombre, descripcion: descripcion, vunitario: vunitario, estado: estado },
         }
         console.log(options.data);

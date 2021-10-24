@@ -19,7 +19,7 @@ const EditarUsuarios = () => {
         const options = {
             method: 'PATCH',
             url: 'https://peaceful-fortress-80371.herokuapp.com/users/edit',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem("token")}`},
             data: { id: location.state._id, nombre: location.state.nombre, estado: estado, rol: rol },
         }
         console.log(options.data);

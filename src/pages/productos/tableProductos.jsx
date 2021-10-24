@@ -21,7 +21,10 @@ class TableProductos extends Component {
     const getProductos = async () => {
       const options = {
         method: 'GET',
-        url: 'https://peaceful-fortress-80371.herokuapp.com/productos'
+        url: 'https://peaceful-fortress-80371.herokuapp.com/productos',
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        }
       };
 
       await axios.request(options).then((response) => {
@@ -103,7 +106,10 @@ class TableProductosA extends Component {
     const getProductos = async () => {
       const options = {
         method: 'GET',
-        url: 'https://peaceful-fortress-80371.herokuapp.com/productos'
+        url: 'https://peaceful-fortress-80371.herokuapp.com/productos',
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        }
       };
 
       await axios.request(options).then((response) => {

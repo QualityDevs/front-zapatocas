@@ -10,7 +10,7 @@ const PrivateRoute = ({children}) => {
 
         const fetchAuth0Token =async()=>{
             const accessToken = await getAccessTokenSilently({
-                audience="api-auteticacion-zapatocas-mintic",
+                audience:"api-auteticacion-zapatocas-mintic",
         });
         localStorage.setItem("token", accessToken);
 

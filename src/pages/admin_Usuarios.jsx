@@ -9,7 +9,10 @@ const AdminUsuarios = () => {
     const getUsuarios = async () => {
         const options = {
             method: 'GET',
-            url: 'https://peaceful-fortress-80371.herokuapp.com/users'
+            url: 'https://peaceful-fortress-80371.herokuapp.com/users',
+            headers: {
+                Authorization: `Bearer ${localStorage.getItem("token")}`,
+              }
         };
         
             await axios.request(options).then((response) => {

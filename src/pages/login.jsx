@@ -16,7 +16,7 @@ const Login = () => {
       
       
             <button
-            onClick={() => loginWithRedirect()}
+            onClick={() => loginWithRedirect("https://nameless-castle-60806.herokuapp.com/home")}
             class= 'border border-danger rounded ' type='submit'>Iniciar Sesion</button>
       
       

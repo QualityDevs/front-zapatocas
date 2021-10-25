@@ -7,8 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const EditarUsuarios = () => {
     let location = useLocation();
-    const [estado, setEstado] = useState(data.estado);
-    const [rol, setRol] = useState(data.rol);
+    const [estado, setEstado] = useState("");
+    const [rol, setRol] = useState("");
     
     useEffect(() => {
         setEstado(location.state.estado);

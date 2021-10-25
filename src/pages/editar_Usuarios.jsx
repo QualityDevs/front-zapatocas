@@ -7,8 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const EditarUsuarios = () => {
     let location = useLocation();
-    const [estado, setEstado] = useState("");
-    const [rol, setRol] = useState("");
+    const [estado, setEstado] = useState(data.estado);
+    const [rol, setRol] = useState(data.rol);
     
     useEffect(() => {
         setEstado(location.state.estado);
@@ -20,7 +20,7 @@ const EditarUsuarios = () => {
             method: 'PATCH',
             url: 'https://peaceful-fortress-80371.herokuapp.com/users/edit',
             headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem("token")}`},
-            data: { id: location.state._id, nombre: location.state.nombre, estado: estado, rol: rol },
+            data: { id: location.state._id, name: location.state.name, estado: estado, rol: rol },
         }
         console.log(options.data);
         await axios.request(options).then((response) => {

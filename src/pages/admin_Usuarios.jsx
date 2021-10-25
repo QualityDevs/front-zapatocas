@@ -44,7 +44,7 @@ const AdminUsuarios = () => {
             { state.datos.map((elemento)=>(
             <tr> 
                 <td className="tablatd">{elemento._id}</td> 
-                <td className="tablatd">{elemento.nombre}</td>
+                <td className="tablatd">{elemento.name}</td>
                 <td className="tablatd">{elemento.estado}</td> 
                 <td className="tablatd">{elemento.rol}</td>
                 <td className="tablatd centro">

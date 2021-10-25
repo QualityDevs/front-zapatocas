@@ -25,7 +25,7 @@ export const obtenerDatosUsuario = async (id) =>{
     }
 
     await axios.request(options).then(()=>{
-       console.log("Eliminado correctamente");
+       console.log("Obtenido correctamente");
     }).catch(function(err){
         console.error(err);
     })
